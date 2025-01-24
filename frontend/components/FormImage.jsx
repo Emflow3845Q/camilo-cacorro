@@ -9,7 +9,7 @@ const FormImage = () => {
   };
 
   return (
-    <div>
+    <div className="form-container">
       <form
         action="http://localhost:3001/convert"
         method="post"
@@ -21,7 +21,6 @@ const FormImage = () => {
           selectedFormat={selectedFormat}
           onFormatChange={handleFormatChange}
         />
-        <br />
         <button type="submit">Convertir imagen</button>
       </form>
     </div>

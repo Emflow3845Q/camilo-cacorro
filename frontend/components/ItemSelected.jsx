@@ -6,18 +6,17 @@ const ItemSelected = ({ selectedFormat, onFormatChange }) => {
   };
 
   return (
-    <>
-      <select
-        name="format"
-        id="format"
-        value={selectedFormat}
-        onChange={handleFormatChange}
-      >
-        <option value="png">PNG</option>
-        <option value="jpg">JPG</option>
-        <option value="webp">WEBP</option>
-      </select>
-    </>
+    <select
+      name="format"
+      id="format"
+      value={selectedFormat}
+      onChange={handleFormatChange}
+    >
+      <option value="png">PNG</option>
+      <option value="jpg">JPG</option>
+      <option value="webp">WEBP</option>
+      <option value="gif">GIF</option>
+    </select>
   );
 };
 
