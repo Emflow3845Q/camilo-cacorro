@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Convert Imagen</title>
+</head>
+<body>
+  <div class="form-container">
+    <form action="http://localhost:3001/convert" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" id="imageInput" />
+      <h4>Selecciona un formato: </h4>
+      <select name="format" id="format">
+        <option value="png" <% if (selectedFormat === 'png') { %> selected <% } %> >PNG</option>
+        <option value="jpg" <% if (selectedFormat === 'jpg') { %> selected <% } %> >JPG</option>
+        <option value="webp" <% if (selectedFormat === 'webp') { %> selected <% } %> >WEBP</option>
+        <option value="gif" <% if (selectedFormat === 'gif') { %> selected <% } %> >GIF</option>
+      </select>
+      <button type="submit">Convertir imagen</button>
+    </form>
+  </div>
+  <footer>
+    <div>
+      <p>Desarrollado por <b>XXI</b></p>
+    </div>
+  </footer>
+</body>
+</html>

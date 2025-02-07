@@ -1,5 +1,5 @@
 # Ignorar node_modules en el directorio frontend
-/frontend/node_modules
+/frontend/
 
 # Ignorar node_modules en el directorio backend
 /backend/node_modules
