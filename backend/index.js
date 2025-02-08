@@ -6,7 +6,7 @@ import convertImage from "./functions/convertImage.js";
 const app = express();
 const __dirname = path.resolve();
 
-//const port = 3001;
+const port = 3001;
 const upload = multer({ dest: "./storage" });
 
 app.use(express.json());
@@ -25,8 +25,6 @@ app.post("/convert", upload.single("image"), (req, res) => {
   convertImage(format, req, res);
 });
 
-/*
 app.listen(port, () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);
 });
-*/
